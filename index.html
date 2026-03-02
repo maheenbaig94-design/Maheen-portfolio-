@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maheen | Professional Portfolio</title>
+    <style>
+        :root {
+            --bg-dark: #0a0a0b;
+            --accent-red: #e94560; /* Dark Neon Red from your reference image */
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --text-light: #f5f5f5;
+            --text-muted: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at top right, #1a080a, #0a0a0b);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        .container { max-width: 950px; margin: 0 auto; padding: 60px 20px; }
+
+        /* Header / Hero */
+        header { text-align: center; margin-bottom: 80px; }
+        .name-title { font-size: 4rem; font-weight: 800; letter-spacing: -2px; margin: 0; text-transform: uppercase; }
+        .subtitle { color: var(--accent-red); font-weight: 500; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; }
+
+        /* Section Titles */
+        h2 { 
+            font-size: 1.5rem; 
+            text-transform: uppercase; 
+            border-bottom: 2px solid var(--accent-red); 
+            display: inline-block; 
+            margin-bottom: 30px; 
+            padding-bottom: 5px;
+            color: var(--accent-red);
+        }
+
+        /* Portfolio Cards */
+        .card {
+            background: var(--glass-bg);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 25px;
+            transition: 0.4s ease;
+            backdrop-filter: blur(10px);
+        }
+        .card:hover {
+            border-color: var(--accent-red);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .highlight-text { color: var(--text-light); font-weight: 600; font-size: 1.2rem; }
+        .sub-text { color: var(--text-muted); font-size: 0.95rem; display: block; margin-top: 5px; }
+        .duration { color: var(--accent-red); font-weight: bold; float: right; font-size: 0.85rem; }
+
+        /* Technical Skills Grid */
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+        footer {
+            text-align: center;
+            padding-top: 50px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            margin-top: 100px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .name-title { font-size: 2.5rem; }
+            .skills-grid { grid-template-columns: 1fr; }
+            .duration { float: none; display: block; margin-bottom: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="name-title">MAHEEN</h1>
+        <p class="subtitle">Laboratory Professional & Web Developer</p>
+    </header>
+
+    <section>
+        <h2>Executive Summary</h2>
+        <div class="card">
+            <p>A multi-skilled professional with a robust background in <b>Medical Laboratory Technology</b> and <b>Full-Stack Web Development</b>. I specialize in combining clinical precision with technical innovation. With extensive experience in the education sector and a year of specialized medical training, I bring a disciplined and analytical approach to every project.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔬 Medical Laboratory Expertise</h2>
+        <div class="card">
+            <span class="duration">1-Year Program</span>
+            <span class="highlight-text">Diploma in Laboratory Technician</span>
+            <span class="sub-text">Sindh Government Hospital, Karachi</span>
+            <p style="margin-top: 15px; border-left: 2px solid var(--accent-red); padding-left: 15px;">
+                Trained in clinical diagnostics, pathology lab management, and high-accuracy sample analysis.
+            </p>
+        </div>
+        
+        <div class="card">
+            <span class="duration">6 Months</span>
+            <span class="highlight-text">Laboratory Assistant</span>
+            <span class="sub-text">Khidmat Laboratory</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>💻 Technical & Development Skills</h2>
+        <div class="skills-grid">
+            <div class="card">
+                <span class="highlight-text">Web Development</span>
+                <span class="sub-text">Aptech Institute</span>
+                <ul style="padding-left: 20px; color: var(--text-muted);">
+                    <li>JavaScript & PHP</li>
+                    <li>XML & JSON Data Handling</li>
+                    <li>Frontend UI/UX Implementation</li>
+                </ul>
+            </div>
+            <div class="card">
+                <span class="highlight-text">IT & Operations</span>
+                <span class="sub-text">Software Proficiency</span>
+                <ul style="padding-left: 20px; color: var(--text-muted);">
+                    <li>Expert in MS Office Suite</li>
+                    <li>Database Management Concepts</li>
+                    <li>Technical Documentation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>💼 Professional Experience</h2>
+        
+        <div class="card">
+            <span class="duration">1 Year</span>
+            <span class="highlight-text">Secondary School Teacher</span>
+            <span class="sub-text">Iqra Hadiqa-tul-Atfal Secondary School</span>
+        </div>
+
+        <div class="card">
+            <span class="duration">1 Year</span>
+            <span class="highlight-text">Educator</span>
+            <span class="sub-text">Sindh Foundation School</span>
+        </div>
+
+        <div class="card">
+            <span class="duration">5 Months</span>
+            <span class="highlight-text">Teaching Faculty</span>
+            <span class="sub-text">S.S Future Bright Grammar School</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>🎓 Academic Background</h2>
+        <div class="card">
+            <p><b>Intermediate (Pre-Medical)</b> — Board of Karachi</p>
+            <p><b>Matriculation (Science)</b> — Board of Karachi</p>
+        </div>
+    </section>
+    <section id="aptech-projects">
+    <h2>🚀 Technical Projects (Aptech)</h2>
+    <p style="color: var(--text-muted); margin-bottom: 20px;">
+        These are the functional web projects and assignments I have developed during my training at Aptech Institute.
+    </p>
+
+    <div class="skills-grid">
+        
+        <div class="card">
+            <span class="duration">Assignment #1</span>
+            <span class="highlight-text">Responsive Landing Page</span>
+            <div style="margin: 15px 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--accent-red);">
+                <video width="100%" controls poster="thumbnail-image.jpg">
+                    <source src="your-project-video-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="sub-text">Developed using <b>HTML5</b> and <b>CSS3</b>. Features a fully responsive layout with modern UI components.</p>
+        </div>
+
+        <div class="card">
+            <span class="duration">Assignment #2</span>
+            <span class="highlight-text">Dynamic Form Validation</span>
+            <div style="margin: 15px 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--accent-red);">
+                <video width="100%" controls>
+                    <source src="your-project-video-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="sub-text">Implemented client-side validation using <b>JavaScript</b> and <b>JSON</b> for real-time data handling.</p>
+        </div>
+
+        <div class="card">
+            <span class="duration">Assignment #3</span>
+            <span class="highlight-text">PHP Database Integration</span>
+            <div style="margin: 15px 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--accent-red);">
+                <video width="100%" controls>
+                    <source src="your-project-video-3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p class="sub-text">A backend project focusing on <b>PHP</b> and <b>XML</b> to manage and display dynamic content.</p>
+        </div>
+
+    </div>
+</section>
+
+    <footer>
+        <p>Email:maheenbaig94@gmail.com | Contact:0310-2929584</p>
+        <p style="font-size: 0.8rem; margin-top: 10px;">Designed for Professional Impact</p>
+    </footer>
+</div>
+
+</body>
+</html>
